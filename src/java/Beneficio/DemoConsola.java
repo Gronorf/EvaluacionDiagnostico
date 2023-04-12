@@ -5,6 +5,7 @@
 package Beneficio;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
@@ -36,5 +37,7 @@ public class DemoConsola {
         System.out.println("Beneficio con Algoritmo Simple: " + simple.calcular(ventas) + "US$");
         System.out.println("Beneficio con Algoritmo Complejo: " + compleja.calcular(ventas) + "US$");
 
+        List<Integer> ventastest = Arrays.asList(100, 200, 300);
+        System.out.println(compleja.calcular(ventastest));
     }
 }
